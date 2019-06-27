@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap');
+@import url(<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">)
+:root{
+    --main-color: black;
+    --accent-color: green;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, header, nav, footer, p {
+    margin: 0;
+    padding: 0;
+}
+
+.top-header .logo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.top-header .top-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex: 1;
+}
+
+.top-header .top-menu li {
+    list-style-type: none;
+}
+
+.top-header .top-menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 2px;
+    color: var(--main-color);
+}
+
+.top-header .top-menu li a:hover{
+    border: 1px solid var(--accent-color);
+}
+
+@media (min-width: 600px) {
+    .top-header nav {
+      font-family: 'Rubik Mono One', sans-serif;
+        display: flex;
+        align-items: center;
+        border: color green;
+    }
+}
+
+.top-header .jumbo {
+    background-image: url(../img/GB.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    background-image: url(../img/field.jpg);
+    background-repeat:cover;
+}
+
+@media (min-width: 600px) {
+    .top-header .jumbo {
+        min-height: 600px;
+    }
+}
+
+.top-header .jumbo h1 {
+    color: white;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+}
